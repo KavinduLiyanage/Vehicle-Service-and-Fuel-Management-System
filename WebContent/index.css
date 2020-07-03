@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+
+* {
+  box-sizing: border-box;
+}
+.rightnav {
+    overflow: auto;
+}
+    .menuitem :hover {
+        color: #e91e63;
+    }
+body {
+    font-family:Verdana, Geneva, sans-serif;
+}
+.menu_a {
+  float: left;
+  width: 20%;
+}
+
+.search input[type=text] {
+    width: 300px;
+    height: 30px;
+}
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 80%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+
+.right {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.header-home {
+    overflow: visible;
+}
+.footerText{
+    background-color:#f1f1f1;
+    text-align:bottom;
+    padding:10px;
+    margin-top:7px;
+    font-size:12px;
+}
+.headerText {
+    background-color:#999a9b;
+    padding:15px;
+    text-align:center:
+}
+.nav {
+    width: 100%;
+    background: #7c0087;
+}
+    .nav ul {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+        .nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+        }
+            .nav ul li:hover {
+                background:#e91e63;
+            }
+            .nav ul li a {
+                color: #ffffff;
+                text-decoration: none;
+
+            }
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 30px;
+    display: none;
+}
+
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+    overflow: hidden;
+  }
+    .toggle {
+        display: block;
+    }
+    ul {
+        width: 100%;
+    }
+        ul li {
+            display: block;
+            text-align: center;
+        }
+    .active {
+        display: block;
+    }
+        .right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 712px){
+    .nav {
+        display: block;
+    }
+        .nav ul {
+            width: 100%
+        }
+            .nav ul li {
+                display: block;
+                text-align: center;
+            }
+}
+
+@media only screen and (max-width:500px) {
+    .menu_a, .main, .right {
+        width: 100%;
+    }
+}
